@@ -1,0 +1,309 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:
+      "Roboto",
+      -apple-system,
+      Helvetica,
+      sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .registration-page {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem 1rem;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .status-bar {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .status-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .signal-icon,
+  .wifi-icon,
+  .battery-icon,
+  .time-icon {
+    width: auto;
+    height: 1rem;
+    object-fit: contain;
+  }
+  
+  .page-title {
+    width: 100%;
+    padding: 1rem;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  /* Basic Info Section */
+  .basic-info {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .section-title {
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-input {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .helper-text {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    color: #666;
+  }
+  
+  /* Language Preferences Section */
+  .language-preferences {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .chip-container {
+    display: flex;
+    margin-top: 0.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .language-chip {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.75rem 1rem;
+    border: none;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .language-chip:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cultural Interests Section */
+  .cultural-interests {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .section-heading {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .interests-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .interest-chip {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .interest-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .interest-icon {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+  
+  .interest-name {
+    font-size: 1rem;
+    font-weight: 500;
+    flex: 1;
+  }
+  
+  /* User Profile Section */
+  .user-profile {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .welcome-message {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Action Buttons Section */
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    flex: 1;
+    min-width: 150px;
+    padding: 0.875rem 1.5rem;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .primary-button {
+    background-color: #007AFF;
+    color: white;
+    border: none;
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    color: #007AFF;
+    border: 1px solid #007AFF;
+  }
+  
+  .primary-button:hover,
+  .secondary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    .registration-page {
+      padding: 0 0.5rem 0.5rem;
+    }
+  
+    .interests-row {
+      grid-template-columns: 1fr;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+    }
+  
+    .primary-button,
+    .secondary-button {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .basic-info,
+    .language-preferences,
+    .cultural-interests {
+      padding: 0;
+    }
+  
+    .chip-container {
+      justify-content: flex-start;
+    }
+  
+    .language-chip {
+      min-width: 120px;
+    }
+  
+    .user-profile {
+      margin: 2rem auto;
+      max-width: 90%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .registration-page {
+      padding: 0 2rem 2rem;
+    }
+  
+    .interests-row {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration/Login</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="registration-page">
+      <header class="top-bar">
+        <div class="status-bar">
+          <div class="status-left">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/e54053112822493a93a674e8c22eb25b/ea928b59fab9bcaa61abb1cd619bdac569fae946a1467d1b1b7784619f03c481?placeholderIfAbsent=true"
+              alt="Signal icon"
+              class="signal-icon"
+            />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/e54053112822493a93a674e8c22eb25b/3a7b64073a3fb877f87ed5b5654888250ce42065a9cac5072fbeb95b1569c72e?placeholderIfAbsent=true"
+              alt="WiFi icon"
+              class="wifi-icon"
+            />
+          </div>
+          <div class="status-right">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/e54053112822493a93a674e8c22eb25b/9c8248726bec5e7781b9494ef3c7ca1865dd3d350226fd36d968d51a376f268f?placeholderIfAbsent=true"
+              alt="Battery icon"
+              class="battery-icon"
+            />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/e54053112822493a93a674e8c22eb25b/c2e0ac5d1726baded68e230abd2fe7babb4474561d317eb56b3c06085b6f3dd4?placeholderIfAbsent=true"
+              alt="Time"
+              class="time-icon"
+            />
+          </div>
+        </div>
+        <h1 class="page-title">User Registration/Login</h1>
+      </header>
+
+      <main>
+        <section class="basic-info">
+          <h2 class="section-title">Basic Info Collection</h2>
+          <input
+            type="text"
+            class="text-input"
+            placeholder="Enter your information"
+          />
+          <p class="helper-text">Please fill in all the required fields.</p>
+        </section>
+
+        <section class="language-preferences">
+          <h2 class="section-title">Language Preferences</h2>
+          <div class="chip-container">
+            <button class="language-chip">English</button>
+            <button class="language-chip">Spanish</button>
+            <button class="language-chip">French</button>
+            <button class="language-chip">Mandarin</button>
+          </div>
+          <p class="helper-text">Select your preferred language</p>
+        </section>
+
+        <section class="cultural-interests">
+          <h2 class="section-heading">Cultural Interests</h2>
+          <div class="interests-row">
+            <div class="interest-chip">
+              <span class="interest-icon">🎭</span>
+              <span class="interest-name">Theater</span>
+            </div>
+            <div class="interest-chip">
+              <span class="interest-icon">🎨</span>
+              <span class="interest-name">Art</span>
+            </div>
+            <div class="interest-chip">
+              <span class="interest-icon">🎶</span>
+              <span class="interest-name">Music</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-profile">
+          <div class="avatar"></div>
+          <div class="user-info">
+            <h3 class="user-name">User's Name</h3>
+            <p class="welcome-message">Welcome! Let's get started</p>
+          </div>
+        </section>
+
+        <section class="action-buttons">
+          <button class="secondary-button">Login</button>
+          <button class="primary-button">Register</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
